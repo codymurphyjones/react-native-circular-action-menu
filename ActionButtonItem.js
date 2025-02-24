@@ -16,6 +16,7 @@ export default class ActionButtonItem extends Component {
     const offsetY = this.props.radius * Math.sin(this.props.angle);
     return (
       <Animated.View
+		useNativeDriver={true}
         style={[{
           opacity: this.props.anim,
           width: this.props.size,

@@ -115,6 +115,7 @@ export default class ActionButton extends Component {
             }}
         >
           <Animated.View
+			useNativeDriver={true}
             style={
               [
                 styles.btn,
@@ -221,6 +222,7 @@ export default class ActionButton extends Component {
           onPress={() => {this.reset(); this.props.onOverlayPress()}}
         >
           <Animated.View
+			useNativeDriver={true}
             style={
               {
                 backgroundColor: this.props.bgColor,
