@@ -115,7 +115,7 @@ export default class ActionButton extends Component {
             }}
         >
           <Animated.View
-			useNativeDriver={true}
+			      useNativeDriver={true}
             style={
               [
                 styles.btn,
@@ -155,6 +155,7 @@ export default class ActionButton extends Component {
 
     return (
       <Animated.Text
+        useNativeDriver={true}
         style={[styles.btnText,
                 {
                   color: this.state.anim.interpolate({
@@ -222,7 +223,7 @@ export default class ActionButton extends Component {
           onPress={() => {this.reset(); this.props.onOverlayPress()}}
         >
           <Animated.View
-			useNativeDriver={true}
+			      useNativeDriver={true}
             style={
               {
                 backgroundColor: this.props.bgColor,
